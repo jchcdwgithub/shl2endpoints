@@ -20,6 +20,10 @@ example with flags:
 ### Processing multiple static host files
 If there is a need to process more than one static host file XML, place the files into a directory and provide the script with the -d or --directory flag.
 The output files will be named the same as the static host files but with a _Endpoints appended to the name.
-example.
+
+example:
 `python shl2endpoints.py -d mydirectory`
+
+If the contents of mydirectory is: shl1.xml, shl2.xml then the resulting endpoints files will be shl1_Endpoints.xml and shl2_Endpoints.xml.
+
 The directory can be a relative or absolute path.
